@@ -1,0 +1,482 @@
+/* Adds the font to the website */
+/* This one is specifically for: Safari, Android & iOS */
+@font-face {
+  font-family: Quicksand;
+  src: url('fonts/Quicksand_Regular.ttf');
+}
+
+/* This one is specifically for: Pretty modern */
+@font-face {
+  font-family: Quicksand;
+  src: url('fonts/quicksand_regular_webfont.woff');
+}
+
+@font-face {
+  font-family: Indie_Flower;
+  src: url('fonts/IndieFlower.ttf');
+}
+
+html
+{
+ scroll-behavior: smooth;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Changes link color after being visited */
+a:visited
+{
+  color: black;
+}
+
+body
+{
+  font-family: Quicksand;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.logo
+{
+  display: flex;
+  position: absolute;
+  padding-left: 4%;
+  padding-top: 1%;
+  font-weight: bold;
+}
+
+.cat_sprite
+{
+  position: fixed;
+  top: 0.5%;
+  right: 5%;
+
+  width: 60px;
+  height: 60px;
+  background: url('images/kat.png') 0 0;
+  animation: play 2s steps(40) infinite;
+}
+
+@keyframes play {
+  100% { background-position: -2400px; }
+}
+
+nav
+{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  z-index: 5;
+}
+
+nav p
+{
+  position: absolute;
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+  padding-left: 0px 20px;
+  left: 1%
+}
+
+/* Centers and makes the nav bar responsive */
+nav ul
+{
+  display: flex;
+  justify-content: center;
+}
+
+/* Removes list styling and spaces it from the logo */
+nav ul li
+{
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+/* Controls the link styling in the nav bar */
+nav ul li a
+{
+  display: block;
+  color; #222;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 19px 22px;
+  text-decoration: none;
+  text-align:
+}
+
+/* Changes the color of links on hover */
+nav ul li a:hover
+{
+  background-color: #65fff5;
+}
+
+/* Style for the dropdown box */
+nav ul li ul
+{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+/* On hover, shows the dropdown box */
+nav ul li:hover ul
+{
+  display: flex;
+}
+
+/* Text elements in the dropdown box */
+nav ul li ul li
+{
+  text-align: left;
+  width: 160px;
+  border-radius: 0px;
+}
+
+/* Controls the padding of the dropdown box links */
+nav ul li ul li a
+{
+  padding: 12px 14px;
+}
+
+/* On hover, changes link color BG */
+nav ul li ul li a:hover
+{
+  background-color: #65fff5;
+}
+
+/* Parallax effect start */
+.parallax
+{
+  /* Can't it just inherit the height of the overlay image? */
+  background-image: url('images/crystalbgbigger.png');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.bgtest
+{
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/* Makes the image responsive */
+.responsive_image
+{
+  width: 100%;
+  height: auto;
+}
+
+h2
+{
+  font-family: Indie_Flower;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 500px;
+  font-size: 76px;
+}
+
+p
+{
+  width: 600px;
+  font-size: 26px;
+}
+
+.who_am_i
+{
+  display: flex;
+  position: absolute;
+  top: 20%;
+  right: 60%;
+}
+
+.who_am_i_desc
+{
+display: flex;
+position: absolute;
+top: 35%;
+right: 20%;
+}
+
+.box
+ {
+   background-color: black;
+   height: 660px;
+   width: 1200px;
+ }
+
+.picture
+  {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.my_vision
+  {
+    display: flex;
+    position: absolute;
+    top: 120%;
+    right: 90%;
+  }
+
+.my_vision_desc
+{
+  display: flex;
+  position: absolute;
+  top: 138%;
+  right: 50%;
+}
+
+.my_process
+  {
+    display: flex;
+    position: absolute;
+    top: 220%;
+    right: 60%;
+  }
+
+.my_process_desc
+{
+  display: flex;
+  position: absolute;
+  top: 238%;
+  right: 20%;
+}
+
+.my_work
+  {
+    display: flex;
+    position: absolute;
+    top: 310%;
+    right: 95%;
+  }
+
+.my_work_desc
+{
+  display: flex;
+  position: absolute;
+  top: 328%;
+  right: 55%;
+}
+
+#vision_section /* The position of the anchor */
+{
+  position: absolute;
+  top: 100%;
+}
+
+#process_section
+{
+  position: absolute;
+  top: 205%;
+}
+
+#work_section
+{
+  position: absolute;
+  top: 298%;
+}
+
+#who_section
+{
+  position: absolute;
+  top: 0%;
+}
+
+.god_container {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  top: 371%;
+  height: 10000px;
+  width: 100%;
+}
+
+.god
+{
+  position: sticky;
+  bottom: -60px;
+  align-self: flex-end;
+  z-index: 10;
+}
+
+#photo_section
+{
+  position: absolute;
+  top: 395%;
+}
+
+.photo_pillar
+{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+
+  top: 360%;
+  width: 100%;
+}
+
+#photo_me_me
+{
+  position: absolute;
+  top: 41%;
+  left: 0%;
+}
+
+#photo_me_vision
+{
+  position: absolute;
+  top: 114%;
+  right: -4.8%;
+}
+
+#photo_me_process
+{
+  position: absolute;
+  top: 206%;
+  left: 1.5%;
+}
+
+h3
+{
+  font-family: Indie_Flower;
+}
+
+#experience_desc
+{
+  position: absolute;
+  top: 16%;
+  left: 22%;
+}
+
+#arrow
+{
+  position: absolute;
+  top: 9%;
+  left: 30%;
+}
+
+#line
+{
+  position: absolute;
+  top: 21.4%;
+  left: 21.8%;
+}
+
+#video_section
+{
+  position: absolute;
+  top: 694%;
+}
+
+.video_pos
+{
+  position: absolute;
+  top: 700%;
+  left: 17%;
+}
+
+.youtube
+{
+  position: absolute;
+  top: 767%;
+  left: -5%;
+}
+
+.arrow3
+{
+  position: absolute;
+  top: 767%;
+  left: 10%;
+}
+
+.ytchannel
+{
+  position: absolute;
+  top: 765%;
+  left: 3%;
+}
+
+.line2
+{
+  position: absolute;
+  top: 768%;
+  left: 2.6%;
+}
+
+#contact_section
+{
+  position: absolute;
+  top: 755%;
+}
+
+.contact
+  {
+    display: flex;
+    position: absolute;
+    top: 800%;
+    right: 75%;
+  }
+
+.contact_desc
+{
+  display: flex;
+  position: absolute;
+  top: 814%;
+  right: 33%;
+}
+
+#mail
+{
+  display: flex;
+  position: absolute;
+  top: 830%;
+  left: 42.5%;
+  font-size: 112;
+  font-weight: bold;
+}
+
+/* .easter
+{
+  position: sticky;
+  top: 1500%;
+} */
+
+.easter_container {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  top: 1200%;
+  height: 1917px;
+  width: 100%;
+}
+
+.easter
+{
+  position: sticky;
+  bottom: 0px;
+  align-self: flex-end;
+  z-index: 10;
+}
